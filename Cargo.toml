@@ -35,8 +35,9 @@ members = [
 ]
 
 [workspace.dependencies.snarkvm]
-version = "=0.14.6"
-features = [ "circuit", "console", "rocks" ]
+#version = "=0.14.6"
+path = "../snarkVM"
+features = [ "circuit", "console", "rocks", "cuda" ]
 
 [[bin]]
 name = "snarkos"
